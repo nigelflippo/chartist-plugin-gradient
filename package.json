@@ -1,7 +1,7 @@
 {
   "name": "chartist-plugin-gradient",
   "description": "Area Gradient Plugin for Chartist.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Nigel Flippo",
   "repository": {
     "type": "git",
