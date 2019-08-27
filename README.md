@@ -1,6 +1,8 @@
 # Area Gradient plugin for Chartist.js
 
-This is a plugin for Chartist.js that will place a gradient on your chart that spans opposite directions relative to a baseline threshold.
+This is a plugin for Chartist.js that will append a gradient to your line chart that spans opposite directions relative to a baseline threshold.
+
+![Gradient Example Screenshot](https://raw.github.com/nigelflippo/chartist-plugin-gradient/master/ct-gradient-example.png "Gradient Example Screenshot")
 
 ## Download
 ```
@@ -26,6 +28,7 @@ var chart = new Chartist.Line('.ct-chart', {
     [2, 4, 2, 5, 4, 3, 6]
   ]
 }, {
+  showArea: true,
   plugins: [
     ctAreaGradient({
       threshold: this.areaBase
