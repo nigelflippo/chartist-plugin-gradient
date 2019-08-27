@@ -4,20 +4,22 @@ This is a plugin for Chartist.js that will place a gradient on your chart that s
 
 ## Download
 ```
-npm install chartist-plugin-gradient --save
+npm install --save chartist-plugin-gradient
 ```
 
 ## Available options and their defaults
 
 ```javascript
 var defaultOptions = {
-  threshold: 0
+  threshold: 0;
 };
 ```
 
 ## Sample usage in Chartist.js
 
 ```javascript
+import ctAreaGradient from 'chartist-plugin-gradient';
+
 var chart = new Chartist.Line('.ct-chart', {
   series: [
     [1, 5, 3, 4, 6, 2, 3],
@@ -30,4 +32,10 @@ var chart = new Chartist.Line('.ct-chart', {
     })
   ]
 });
+```
+
+```css
+.ct-base-above, .ct-base-below {
+  fill: #000;
+}
 ```
