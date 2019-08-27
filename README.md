@@ -29,9 +29,10 @@ var chart = new Chartist.Line('.ct-chart', {
   ]
 }, {
   showArea: true,
+  areaBase: 0,
   plugins: [
     ctAreaGradient({
-      threshold: this.areaBase
+      threshold: 0
     })
   ]
 });
