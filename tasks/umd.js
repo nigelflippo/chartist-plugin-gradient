@@ -12,14 +12,14 @@
 module.exports = function (grunt) {
   return {
     dist: {
-      src: '<%= pkg.config.src %>/scripts/chartist-plugin-pointlabels.js',
-      dest: '<%= pkg.config.dist %>/chartist-plugin-pointlabels.js',
-      objectToExport: 'Chartist.plugins.ctPointLabels',
+      src: '<%= pkg.config.src %>/scripts/chartist-plugin-gradient.js',
+      dest: '<%= pkg.config.dist %>/chartist-plugin-gradient.js',
+      objectToExport: 'Chartist.plugins.ctAreaGradient',
       indent: '  ',
       deps: {
-        default: ['Chartist'],
-        amd: ['chartist'],
-        cjs: ['chartist'],
+        default: ['Chartist', 'uuid'],
+        amd: ['chartist', 'uuid'],
+        cjs: ['chartist', 'uuid'],
         global: ['Chartist']
       }
     }

@@ -1,15 +1,11 @@
 {
-  "name": "chartist-plugin-pointlabels",
-  "description": "Point Labels Plugin for Chartist.js",
-  "version": "0.0.6",
-  "author": "Gion Kunz",
-  "homepage": "https://gionkunz.github.io/chartist-plugin-pointlabels",
+  "name": "chartist-plugin-gradient",
+  "description": "Area Gradient Plugin for Chartist.js",
+  "version": "0.0.1",
+  "author": "Nigel Flippo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gionkunz/chartist-plugin-pointlabels.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gionkunz/chartist-plugin-pointlabels/issues"
+    "url": "https://github.com/nigelflippo/chartist-plugin-gradient.git"
   },
   "keywords": [
     "chartist",
@@ -21,14 +17,9 @@
     "package.json",
     "README.md"
   ],
-  "main": "dist/chartist-plugin-pointlabels.js",
-  "browser": "dist/chartist-plugin-pointlabels.js",
-  "licenses": [
-    {
-      "type": "WTFPL",
-      "url": "https://github.com/gionkunz/chartist-plugin-pointlabels/blob/master/LICENSE"
-    }
-  ],
+  "main": "dist/chartist-plugin-gradient.js",
+  "browser": "dist/chartist-plugin-gradient.js",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "chartist": "~0.8.0",
@@ -38,8 +29,8 @@
     "grunt-contrib-jasmine": "~1.1.0",
     "grunt-contrib-jshint": "~0.12.0",
     "grunt-contrib-uglify": "^0.6.0",
-    "grunt-umd": "~2.2.1",
     "grunt-newer": "^0.8.0",
+    "grunt-umd": "~2.2.1",
     "jasmine-fixture": "~1.2.2",
     "jshint-stylish": "~1.0.0",
     "load-grunt-config": "^0.16.0",
@@ -49,10 +40,11 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt build"
   },
   "config": {
-    "banner": "/* chartist-plugin-pointlabels <%= pkg.version %>\n * Copyright © <%= year %> Gion Kunz\n * Free to use under the WTFPL license.\n * http://www.wtfpl.net/\n */\n",
+    "banner": "/* chartist-plugin-gradient <%= pkg.version %>\n * Copyright © <%= year %> Nigel Flippo",
     "src": "src",
     "dist": "dist",
     "tmp": ".tmp",
