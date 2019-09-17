@@ -24,8 +24,7 @@ import ctAreaGradient from 'chartist-plugin-gradient';
 
 var chart = new Chartist.Line('.ct-chart', {
   series: [
-    [1, 5, 3, 4, 6, 2, 3],
-    [2, 4, 2, 5, 4, 3, 6]
+    [1, 5, -3, 4, -6, 2, -3, 0]
   ]
 }, {
   showArea: true,
