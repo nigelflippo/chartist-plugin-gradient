@@ -53,8 +53,8 @@
 	function createMasks (data, options) {
 		var defs = data.svg.querySelector('defs') || data.svg.elem('defs');
 		var projectedBounds = data.chartRect.height() - data.axisY.projectValue(options.threshold) + data.chartRect.y2;
-		var width = data.svg.width();
-		var height = data.svg.height();
+		var width = data.svg.width() || data.options.width;
+		var height = data.svg.height() || data.options.height;
 
 		var gradientAbove = generateGradient({ isAbove: true });
 		var gradientBelow = generateGradient({ isAbove: false });
